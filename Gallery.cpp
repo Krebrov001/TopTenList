@@ -48,6 +48,7 @@ void Gallery::display_forward()
              <<_collection[i].display<<" "
              <<_collection[i].description<<std::endl;
   }
+  std::cout << std::endl;
 }
 
 // Display all emoticons in the gallery from end to beginning
@@ -68,4 +69,5 @@ void Gallery::display_backward()
              <<_collection[i].display<<" "
              <<_collection[i].description<<std::endl;
   }
+  std::cout << std::endl;
 }

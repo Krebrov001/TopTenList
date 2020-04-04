@@ -10,47 +10,45 @@ int main()
 {
     TopTenList* languages = new TopTenList();
     Gallery* emoticons = new Gallery();
-    Hyperlink cpp;
+    Hyperlink language_link;
 
-    cpp.text = "C++";
-    cpp.url = "https://www.cplusplus.com/";
-    languages->set_at(1, cpp);
-    cpp.text = "Python";
-    cpp.url = "https://www.python.org/";
-    languages->set_at(2, cpp);
-    cpp.text = "JavaScript";
-    cpp.url = "https://www.javascript.com/";
-    languages->set_at(3, cpp);
-    cpp.text = "Java";
-    cpp.url = "https://www.java.com/";
-    languages->set_at(4, cpp);
-    cpp.text = "C";
-    cpp.url = "https://en.cppreference.com/w/c/language";
-    languages->set_at(5, cpp);
-    cpp.text = "R";
-    cpp.url = "https://www.r-project.org/";
-    languages->set_at(6, cpp);
-    cpp.text = "Ruby";
-    cpp.url = "https://www.ruby-lang.org/en/";
-    languages->set_at(7, cpp);
-    cpp.text = "Swift";
-    cpp.url = "https://developer.apple.com/swift/";
-    languages->set_at(8, cpp);
-    cpp.text = "Go";
-    cpp.url = "https://golang.org/";
-    languages->set_at(9, cpp);
-    cpp.text = "Dart";
-    cpp.url = "https://dart.dev/";
-    languages->set_at(10, cpp);
+    language_link.text = "C++";
+    language_link.url = "https://www.cplusplus.com/";
+    languages->set_at(1, language_link);
+    language_link.text = "Python";
+    language_link.url = "https://www.python.org/";
+    languages->set_at(2, language_link);
+    language_link.text = "JavaScript";
+    language_link.url = "https://www.javascript.com/";
+    languages->set_at(3, language_link);
+    language_link.text = "Java";
+    language_link.url = "https://www.java.com/";
+    languages->set_at(4, language_link);
+    language_link.text = "C";
+    language_link.url = "https://en.language_linkreference.com/w/c/language";
+    languages->set_at(5, language_link);
+    language_link.text = "R";
+    language_link.url = "https://www.r-project.org/";
+    languages->set_at(6, language_link);
+    language_link.text = "Ruby";
+    language_link.url = "https://www.ruby-lang.org/en/";
+    languages->set_at(7, language_link);
+    language_link.text = "Swift";
+    language_link.url = "https://developer.apple.com/swift/";
+    languages->set_at(8, language_link);
+    language_link.text = "Go";
+    language_link.url = "https://golang.org/";
+    languages->set_at(9, language_link);
+    language_link.text = "Dart";
+    language_link.url = "https://dart.dev/";
+    languages->set_at(10, language_link);
 
     emoticons->add(":)","Smile");
     emoticons->add(":(","Frown");
     emoticons->add(":()","Monkey");
 
-    emoticons->display_backward();
     languages->display_forward();
-
-
+    emoticons->display_backward();
 
     return 0;
 }
